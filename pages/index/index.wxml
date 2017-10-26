@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<import src="../common/common.wxml"/>
+<scroll-view scroll-y="true" scroll-into-view="{{toView}}">
+<template is="header" data="{{BaseInfo,close,block}}"/>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="service">
+        <view class="service_title">SERVICE服务</view>
+        <view class="service_list">
+		
+		   <view class="dl">
+                <view class="a" href="/view/qiyewviewngzhviewn/">
+                    <view class="dt"><image src="../../static/images/sev_10.png"></image></view>
+                    <view class="dd"><text>网站设计制作</text>提供高端品牌网站建设，企业网站建设、电子商务、学校、婚纱影楼、医院及政府网站各类网站的设计制作。</view>
+                </view>
+            </view>
+            <view class="dl">
+                <view class="a" href="/view/weixinkviewifview/">
+                    <view class="dt"><image src="../../static/images/sev_12.png"></image></view>
+                    <view class="dd"><text>微应用/微网站开发</text>微活动、微外卖、微场景、微拍、微商城、微酒店、微房产、大转盘、刮刮、优惠劵、会员卡、微网站等开发。</view>
+                </view>
+            </view>
+            <view class="dl">
+                <view class="a" href="//view/shoujiwviewngzhviewn/">
+                    <view class="dt"><image src="../../static/images/sev_14.png"></image></view>
+                    <view class="dd"><text>HTML5手机站开发</text>全面支持IOS苹果客户端 ,完美结合viewndroid移动端 ,支持各类IPviewD版本平板电脑。</view>
+                </view>
+            </view>
+            <view class="dl">
+                <view class="a" href="/view/shviewngchengwviewngzhviewn/">
+                    <view class="dt"><image src="../../static/images/sev_16.png"></image></view>
+                    <view class="dd"><text>网络整合营销</text>提供不同行业的包括企业网站、政府网站、B2C电子商务网站、微网站以及viewPP的全案整合营销推广。</view>
+                </view>
+            </view>
+            <view class="dl">
+                <view class="a" href="/view/ruviewnjiviewnkviewifview/">
+                    <view class="dt"><image src="../../static/images/sev_18.png"></image></view>
+                    <view class="dd"><text>软件开发</text>ERP、Oview、CMS、进销存、二手车行业解决方案系统、汽车质量调研平台系统等软件开发，欢迎用户定制。</view>
+                </view>
+            </view>
+			 <view class="dl">
+                <view class="a" href="/view/ruviewnjiviewnkviewifview/">
+                    <view class="dt"><image src="../../static/images/sev_07.png"></image></view>
+                    <view class="dd"><text>viewPP开发</text>提供安卓(viewndroid)手机/平板、苹果(IOS)Iphone/Ipviewd 开发，欢迎用户定制开发。</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

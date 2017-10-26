@@ -1,0 +1,21 @@
+<template name="header">
+  <view class="top top_2">
+          <view class="logo">
+              <image src="../../static/images/logo.png" ></image>
+          </view>
+          <view class="menu_btn {{close}}" bindtap="onClickMenu">
+              <view class="classname" wx:if="{{close === 0}}">
+                <text></text>
+                <text style="top:14rpx"></text>
+                <text style="top:28rpx"></text>
+              </view>
+              <icon type="cancel" wx:else size="23" color="#fff"/>
+          </view>
+  </view>
+  <view class="meun" style="display: {{block}};">
+    <view class="meun_box">
+        <view class="menuli">首页<image src="../../static/images/sjindex_03.png"></image></view>       
+        <view class="menuli" wx:for="{{BaseInfo.nav}}" data-id='{{index}}'>{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
+		</view>
+  </view>
+</template>
