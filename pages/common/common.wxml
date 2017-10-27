@@ -1,7 +1,7 @@
 <template name="header">
-  <view class="top top_2">
+  <view class="top top_2 {{topBackground}}">
           <view class="logo">
-              <image src="../../static/images/logo.png" ></image>
+              <image src="../../static/images/logo{{topBackground}}.png" ></image>
           </view>
           <view class="menu_btn {{close}}" bindtap="onClickMenu">
               <view class="classname" wx:if="{{close === 0}}">
@@ -18,4 +18,22 @@
         <view class="menuli" wx:for="{{BaseInfo.nav}}" data-id='{{index}}'>{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
 		</view>
   </view>
+</template>
+
+<template name="footer">
+<view class="footer">
+    <view class="footer_nav">
+  	<text href="/appdev">网站建设</text><text href="/web">精品案例</text><text href="/case.html">极鼎观点</text><text href="/about">关于极鼎</text></view>
+    <view class="footer_txt">
+        <view class="ul">
+            <view class="li"><image src="{{BaseImgUrl}}/templets/szjdwap/images/botttomimg_59.png"></image>{{BaseInfo.x_tel}}</view>
+            <view class="li"><image src="{{BaseImgUrl}}/templets/szjdwap/images/botttomimg_56.png"></image>{{BaseInfo.x_mobile}}</view>
+            <view class="li"><image src="{{BaseImgUrl}}/templets/szjdwap/images/botttomimg_63.png"></image>{{BaseInfo.x_email}}</view>
+            <view class="li"><image src="{{BaseImgUrl}}/templets/szjdwap/images/botttomimg_70.png"></image>{{BaseInfo.x_address}}</view>
+        </view> 
+    </view>
+	
+   
+    <view class="footer_cop">Copyright © 2010-2016 苏州极鼎网络科技有限公司</view>
+</view>
 </template>

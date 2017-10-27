@@ -7,7 +7,7 @@ page {
     width: 100%;
     height: 106rpx;
     position: fixed;
-    top: 0rpx;
+    top: -1rpx;
     z-index:10;
 }
 .top .logo{
@@ -18,6 +18,10 @@ page {
   height: 60rpx;
   width: 256rpx;
   margin: 10rpx
+}
+.topBackground{background: #fff;border-bottom: 1px solid rgba(221,221,221,1);}
+.topBackground .menu_btn text{
+background-color: #000;
 }
 .menu_btn{
   width: 52rpx;
@@ -71,4 +75,63 @@ page {
    float: right;
     margin-top: 10rpx;
     opacity: .8;
+}
+
+.footer {
+	width: 100%;
+	background: #000;
+	overflow: hidden
+}
+
+.footer_nav {
+	width: 100%;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	padding: 20rpx 0
+}
+
+.footer_nav text {
+	width: 25%;
+	text-align: center;
+	color: #fff;
+	display: inline-block;
+	font-size: 30rpx
+}
+
+.footer_txt {
+	width: 96%;
+	margin-left: 4%;
+	overflow: hidden
+}
+
+.footer_txt .li {
+	width: 100%;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+	overflow: hidden;
+	float: left;
+	color: #999;
+	font-size: 30rpx;
+	padding: 30rpx 0;
+}
+
+.footer_txt .li image {
+	width: 30rpx;
+  height: 36rpx;
+	margin-right: 10rpx;
+  position: relative;
+  top: 10rpx;
+}
+
+
+
+.footer_txt .li  {
+	color: #999
+}
+
+.footer_cop {
+	width: 100%;
+	text-align: center;
+	color: #666;
+	font-size: 30rpx;
+	padding: 30rpx 0;
+	border-top: 1px solid rgba(255,255,255,.15)
 }

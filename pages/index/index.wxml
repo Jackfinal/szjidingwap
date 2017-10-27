@@ -1,7 +1,6 @@
 <!--index.wxml-->
 <import src="../common/common.wxml"/>
-<scroll-view scroll-y="true" scroll-into-view="{{toView}}">
-<template is="header" data="{{BaseInfo,close,block}}"/>
+<template is="header" data="{{BaseInfo,close,block,topBackground}}"/>
 <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
@@ -53,4 +52,45 @@
             </view>
         </view>
     </view>
-</scroll-view>
+
+    <view class="case">
+        <view class="service_title onbo">CASE案例</view>
+        <view class="case_list">
+            <view class="ul">
+                <view class="li" wx:for="{{otherList.case}}">
+                        <view data-id="{{item.id}}"><image src="{{BaseImgUrl}}{{item.litpic}}"></image><text class="ellipsis">{{item.title}}</text></view>
+                    </view>
+					</view>
+        </view>
+        
+        <view class="case_but">加载更多案例</view>
+    </view>
+    <view class="client">
+        <view class="service_title">VIEW观点</view>
+        <view class="client_news">
+            <view class="ul">
+			
+                <view class="li ellipsis" wx:for="{{otherList.view}}" data-id="{{item.id}}">{{item.title}}</view>
+
+           
+				</view>
+            <view class="client_news_but">查看更多>></view>
+        </view>
+    </view>
+<import src="../../wxParse/wxParse.wxml"/> 
+    <view class="indexabout">
+        <view class="service_title">ABOUT关于</view>
+        <view class="indexabout_txt">
+		<image src="{{BaseImgUrl}}/templets/szjdwap/images/webxh.jpg"></image> 
+		<view class="indexabout_about"><template is="wxParse" data="{{wxParseData:article.nodes}}"/></view>
+        </view>
+        <view class="client_news_but">查看更多>></view>
+    </view>
+
+    <view class="client_shuzi">
+        <view class="client_shuzi_left"><text>11</text>11年开发经验</view>
+        <view class="client_shuzi_con"><text>1000</text>为上千家客户打造网站及移动应用</view>
+        <view class="client_shuzi_right"><text>6</text>六大业务整合</view>
+		<view class="client_shuzi_right"><text>7</text>7*24小时不间断技术支持</view>
+    </view>
+<template is="footer" data="{{BaseInfo,close,block,topBackground,BaseImgUrl}}"/>
