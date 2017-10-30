@@ -15,7 +15,18 @@ function formatNumber(n) {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
+function getClassInfo(id, obj)
+{
+  for (let i in obj) {
+    if(obj[i]['id'] == id)
+    {
+      return obj[i];
+    }
+  }
+  return false;
+}
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  getClassInfo: getClassInfo
 }

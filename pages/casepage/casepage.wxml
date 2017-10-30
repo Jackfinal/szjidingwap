@@ -1,0 +1,7 @@
+<!--pages/casepage/casepage.wxml-->
+<import src="../common/common.wxml"/>
+<import src="../../wxParse/wxParse.wxml"/> 
+<template is="header" data="{{BaseInfo,close,block,topBackground}}"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+
+<template is="footer" data="{{BaseInfo,close,block,topBackground,BaseImgUrl}}"/>

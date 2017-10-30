@@ -8,7 +8,11 @@ App({
     var that = this;
     //获取基础配置信息
     this.RequestUrl( '/index.php/index/getBase' ,{} , '', function(res) {
-      that.BaseInfo = res.data.data
+      that.BaseInfo = res.data.data;
+      wx.setStorage({
+        key: "BaseInfo",
+        data: that.BaseInfo
+      })
     },true);
   },
   RequestUrl(url, data, method, success, complete, loading) {

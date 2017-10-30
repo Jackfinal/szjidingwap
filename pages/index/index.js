@@ -74,7 +74,12 @@ Page({
         })
       }
       WxParse.wxParse('article', 'html', that.data.otherList.about, that, 5);
-      console.log(that.data.otherList);
+      
     });
+  },
+  jump: function(e) {
+    wx.navigateTo({
+      url: e.currentTarget.id
+    })
   }
 })

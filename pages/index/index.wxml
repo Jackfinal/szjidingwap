@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <import src="../common/common.wxml"/>
+<import src="../../wxParse/wxParse.wxml"/> 
 <template is="header" data="{{BaseInfo,close,block,topBackground}}"/>
 <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -15,7 +16,7 @@
         <view class="service_list">
 		
 		   <view class="dl">
-                <view class="a" href="/view/qiyewviewngzhviewn/">
+                <view class="a" bindtap="jump" id="../casepage/casepage?id=1">
                     <view class="dt"><image src="../../static/images/sev_10.png"></image></view>
                     <view class="dd"><text>网站设计制作</text>提供高端品牌网站建设，企业网站建设、电子商务、学校、婚纱影楼、医院及政府网站各类网站的设计制作。</view>
                 </view>
@@ -77,7 +78,7 @@
             <view class="client_news_but">查看更多>></view>
         </view>
     </view>
-<import src="../../wxParse/wxParse.wxml"/> 
+
     <view class="indexabout">
         <view class="service_title">ABOUT关于</view>
         <view class="indexabout_txt">
