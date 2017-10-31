@@ -13,13 +13,12 @@
 
 .service_title {
 	width: 100%;
-	height: .45rem;
+	height: 106rpx;
 	overflow: hidden;
 	border-bottom: 1px solid #e6e6e6;
 	text-align: center;
-	font-family: AGENCYB_0,ruenzhi;
-	font-size: 20rpx;
-	line-height: .52rem
+	font-size: 40rpx;
+	line-height: 100rpx
 }
 
 .service_list {
@@ -42,12 +41,26 @@
 	color: #333;
 	float: left
 }
-
-.service_list dl dt img {
-	width: .42rem;
-	margin-top: .03rem
+.appnav ,.appys,.websev,.websev2{
+    width: 100%;
+    overflow: hidden;
 }
-
+.service .appnav .wxParse-li-text image {
+	width: 140rpx!important;
+  height: 140rpx!important;
+	margin-top: 20rpx
+}
+.service .appnav .wxParse-li{
+    width: 49%;
+    float: left;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 20rpx 0;
+    position: relative;
+}
+.service .appnav .borderli.wxParse-li,.appys .wxParse-dl.borderli{
+    border-right: 1px solid #e6e6e6;
+}
 .service_list dl dd {
 	overflow: hidden;
 	font-size: .12rem;
@@ -59,4 +72,186 @@
 	font-size: .14rem;
 	color: #333;
 	display: block
+}
+.appys .wxParse-dl {
+    width: 49%;
+    float: left;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 50rpx 0;
+    position: relative;
+}
+.appys .wxParse-dt {
+	width: 140rpx!important;
+  height: 140rpx!important;
+    overflow: hidden;
+    border-radius: 10rpx;
+    background: #27bd8f;
+    color: #fff;
+    font-size: 30rpx;
+    margin: 0 auto;
+}
+.appys .wxParse-dt image{
+	width: 60rpx!important;
+  height: 60rpx!important;
+  margin: 15rpx 0 10rpx 0;
+}
+.appys .wxParse-dd {
+    width: 100%;
+    margin-top: 20rpx;
+    font-size: 30rpx;
+    color: #666;
+    line-height: 30rpx;
+}
+
+.websev_title {
+    width: 94%;
+    overflow: hidden;
+    margin: 20rpx auto 0 auto;
+    color: #fff;
+    font-size: 60rpx;
+}
+
+.websev_box {
+    width: 94%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.websev_box_xian {
+    width: 30rpx;
+    height: 4rpx;
+    background: #fff;
+    margin: 10px 0;
+}
+.websev_box_txt {
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    font-size: 30rpx;
+}
+.websev_box_img {
+    width: 94%;
+    overflow: hidden;
+    margin: 20rpx 0;
+}
+.websev_box_img image{ width: 662rpx!important;}
+.websev .wxParse-inline{ display: inline}
+.websev .wxParse-i{font-size: 40rpx}
+
+
+.websev2_title {
+	width: 94%;
+	overflow: hidden;
+	margin: 40rpx auto 0rpx auto;
+	color: #019e45;
+	font-size: 40rpx;
+}
+
+.websev2_title .wxParse-span {
+	font-size: 60rpx;
+	line-height: 60rpx;
+	float: right
+}
+
+.websev2_title .wxParse-i {
+	font-style: normal;
+	float: right;
+	margin-right: 10rpx;
+}
+
+.websev_box_xian2 {
+    width: 30rpx;
+    height: 4rpx;
+	background: #019e45;
+	margin: 10rpx 0;
+	float: right
+}
+
+.websev2_box_txt {
+	width: 100%;
+	overflow: hidden;
+	color: #555;
+	font-size: 30rpx;
+	clear: both
+}
+
+.case {
+	width: 100%;
+	overflow: hidden;
+	background: #eaf4f1
+}
+
+.case_list {
+	width: 100%;
+	overflow: hidden
+}
+
+.case_list .li {
+	width: 49.8%;
+	float: left;
+	position: relative;
+	margin-bottom: .4%
+}
+
+.case_list .li text {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	font-size: 30rpx;
+	text-shadow: 1px 1px 0 #444;
+	text-indent: .06rem;
+	padding: 10rpx 0
+}
+
+.case_list .li image{
+  width: 100%;
+  height: 310rpx;
+}
+.case_but {
+	width: 40%;
+	border: 1px solid #c4d7d1;
+	background: #fff;
+	border-radius: 5px;
+	padding: 8rpx 0;
+	margin: 10rpx auto 16rpx auto;
+	font-size: 40rpx;
+	color: #00947e;
+	text-align: center
+}
+
+.applioxen_tu {
+	width: 92%;
+	overflow: hidden;
+	margin: 0 auto
+}
+
+.applioxen_tu .dl {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 30rpx;
+}
+
+.applioxen_tu .dl .dd,.applioxen_tu .dl .dt {
+	width: 20%;
+	float: left;
+	font-size: 30rpx;
+	color: #333;
+	margin-right: 6.6%;
+	text-align: center
+}
+.onbo {
+    border-bottom: none;
+}
+.applioxen_tu .dl .dd {
+	margin-right: 0;
+	float: right
+}
+
+.applioxen_tu .dl image {
+  width: 138rpx;
+  height: 120rpx;
+	margin-bottom: 10rpx;
 }

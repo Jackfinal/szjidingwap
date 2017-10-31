@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/casepage/casepage",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/casepage/casepage"
     
   ],
   "window":{

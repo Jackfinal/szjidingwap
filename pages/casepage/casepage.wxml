@@ -3,5 +3,43 @@
 <import src="../../wxParse/wxParse.wxml"/> 
 <template is="header" data="{{BaseInfo,close,block,topBackground}}"/>
 <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+<view class="case">
+        <view class="service_title onbo">CASE案例</view>
+        <view class="case_list">
+            <view class="ul">
+                <view class="li" wx:for="{{otherList.case}}">
+                        <view data-id="{{item.id}}"><image src="{{BaseImgUrl}}{{item.litpic}}"></image><text class="ellipsis">{{item.title}}</text></view>
+                    </view>
+					</view>
+        </view>
+        
+        <view class="case_but">加载更多案例</view>
+    </view>
+
+<view class="applioxen">
+        <view class="service_title onbo">服务流程</view>
+        <view class="applioxen_tu">
+            <view class="dl">
+                <view class="dt"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/app3_03.png"></image>
+                    <text>需求洽谈</text></view>
+                <view class="dt"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/app3_05.png"></image>
+                    <text>签订合同</text></view>
+                <view class="dt"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/app3_07.png"></image>
+                    <text>UE设计</text></view>
+                <view class="dd"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/app3_09.png"></image>
+                    <text>UI设计</text></view>
+            </view>
+            <view class="dl">
+                <view class="dt"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/app3_15.png"></image>
+                    <text>技计开发</text></view>
+                <view class="dt"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/app3_16.png"></image>
+                    <text>签订合同</text></view>
+                <view class="dt"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/app3_17.png"></image>
+                    <text>产品上线</text></view>
+                <view class="dd"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/app3_18.png"></image>
+                    <text>后期维护</text></view>
+            </view>
+        </view>
+    </view>
 
 <template is="footer" data="{{BaseInfo,close,block,topBackground,BaseImgUrl}}"/>

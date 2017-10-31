@@ -14,8 +14,11 @@
   </view>
   <view class="meun" style="display: {{block}};">
     <view class="meun_box">
-        <view class="menuli">首页<image src="../../static/images/sjindex_03.png"></image></view>       
-        <view class="menuli" wx:for="{{BaseInfo.nav}}" data-id='{{index}}'>{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
+        <view class="menuli" bindtap="jump" id="/pages/index/index">首页<image src="../../static/images/sjindex_03.png"></image></view> 
+        <block wx:for="{{BaseInfo.nav}}">      
+        <view class="menuli"  data-id='{{index}}' bindtap="jump" wx:if="{{item.id==1}}" id="/pages/casepage/casepage?id=1">{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
+        <view class="menuli" bindtap="jump" wx:else>{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
+        </block>
 		</view>
   </view>
 </template>

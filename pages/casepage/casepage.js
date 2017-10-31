@@ -14,6 +14,7 @@ Page({
     block: 'none',
     topBackground: '',
     BaseImgUrl: app.BaseImgUrl,
+    otherList: []
   },
 
   /**
@@ -33,6 +34,7 @@ Page({
     let classInfo = utils.getClassInfo(options.id, app.BaseInfo.nav);
     console.log(classInfo.content);
     WxParse.wxParse('article', 'html', classInfo.content, that, 5);
+    this.getOther();
   },
 
   /**
@@ -82,5 +84,52 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  onClickMenu: function () {
+    if (this.data.close === 0) {
+      this.setData({
+        close: 1,
+        block: 'block'
+      })
+    } else {
+      this.setData({
+        close: 0,
+        block: 'none'
+      })
+    }
+    console.log(this.data.close);
+  },
+  onPageScroll: function (e) {
+    if (e.scrollTop > 112) {
+      this.setData({
+        topBackground: 'topBackground'
+      })
+    } else if (e.scrollTop == 0) {
+      this.setData({
+        topBackground: ''
+      })
+    }
+  },
+  getOther: function () {
+    var that = this;
+    app.RequestUrl('/index.php/index/getOther', {}, '', function (res) {
+      if (res.data.status == 1) {
+        that.setData({
+          otherList: res.data.data
+        })
+      } else {
+        wx.showToast({
+          title: '加载失败',
+          icon: 'success',
+          duration: 2000
+        })
+      }
+
+    });
+  },
+  jump: function (e) {
+    wx.navigateTo({
+      url: e.currentTarget.id
+    })
   }
 })
