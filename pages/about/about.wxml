@@ -1,0 +1,120 @@
+<!--pages/about/about.wxml-->
+<import src="../common/common.wxml"/>
+<import src="../../wxParse/wxParse.wxml"/> 
+<template is="header" data="{{BaseInfo,close,block,topBackground}}"/>
+<view class="cbanner">
+  <image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/about.jpg"></image>
+</view>
+<view class="about-b">
+  <view class="a-b {{block1}}" bindtap="change" id='1'><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/about1{{hover1}}.png"></image><text>关于我们</text></view>
+  <view class="a-b {{block2}}" bindtap="change"  id='2'><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/about2{{hover2}}.png"></image><text>联系我们</text></view>
+  <view class="a-b {{block3}}" bindtap="change"  id='3'><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/about3{{hover3}}.png"></image><text>品牌客户</text></view>
+</view>
+<view class="content1" style="display:{{block1}}">
+
+<view class="content">
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+
+<view class="aboutbox_t">
+                <view class="dl">
+                    <view class="dt">服务范围</view>
+                    <view class="dd"></view>
+                </view>
+            </view>
+<view class="aboutbox_sev">
+                <view class="dl">
+                    <view class="dt">网站建设：</view>
+                    <view class="dd">品牌网站建设、企业网站建设、H5网站建设、电子商务、政府门户等</view>
+                </view>
+                <view class="dl">
+                    <view class="dt">移动开发：</view>
+                    <view class="dd">WAP手机站开发、微信公众平台开发、
+                        <text>Android客户端开发、IOS客户端开发</text></view>
+                </view>
+                <view class="dl">
+                    <view class="dt">软件开发：</view>
+                    <view class="dd">内容管理系统（CMS）订票系统解决方案系统、商城系统等开发</view>
+                </view>
+                <view class="dl">
+                    <view class="dt">设计服务：</view>
+                    <view class="dd">标识LOGO、VIS设计、画册设计、包装设计 </view>
+                </view>
+                <view class="dl">
+                    <view class="dt">基础服务：</view>
+                    <view class="dd">域名注册、虚拟主机、企业邮箱、网站托管、云服务器、服务器租用托管、机柜大带宽 </view>
+                </view>
+               
+            </view>
+</view>
+<view class="aboutjishu">
+            <view class="aboutjishu_title">领先的技术</view>
+            <view class="aboutjishu_icon">
+                <view class="ul">
+                    <view class="li">
+                        <view class="h1"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/aboutimg_07.png"></image><text>IOS</text></view></view>
+                    <view class="li">
+                        <view class="h1 h11"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/aboutimg_09.png"></image><text>ANDROID</text></view></view>
+                    <view class="li">
+                        <view class="h1 h12"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/aboutimg_11.png"></image><text>MYSQL</text></view></view>
+                    <view class="li">
+                        <view class="h1 h13"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/aboutimg_13.png"></image><text>MYSQL</text></view></view>
+                    <view class="li">
+                        <view class="h1 h14"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/aboutimg_20.png"></image><text>ASP.NET</text></view></view>
+                    <view class="li">
+                        <view class="h1 h15"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/aboutimg_22.png"></image><text>JS+HTML5</text></view></view>
+                    <view class="li">
+                        <view class="h1 h16"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/aboutimg_23.png"></image><text>view+CSS3</text></view></view>
+                </view>
+            </view>
+            <view class="aboutjishu_txt">
+                <view class="span" style="margin-top:0px;">在技术方面：</view> 拥有行业内最精英的技术人员，他们有些是曾经服务过大型互联网公司的优秀技术牛人，也有一些是在极鼎科技这个技术氛围浓郁的环境中默默成长，突围而出的技术黑马。 
+                <view class="span">在创意方面：</view>从09年开始服务越来越多的品牌客户，不但在实践中积累了大量的品牌客户服务经验，同时也吸引了众多创意人才加入，来自传统4A公司的创意人员，在互联网广告中被激发出更多的创作热情。
+                <view class="span">在创新方面：</view> 技术作为一种工具，为网络营销提供强有力的后盾，而广告策划和创意作为着眼点，为品牌营销提供源源不断的内容和引爆点，最终，通过科学的网络营销方法，达到一个最完美的广告性价比。
+            </view>
+        </view>
+
+<view class="aboutbot">
+            <view class="aboutjishu_title">专业的团队</view>
+            <view class="aboutjishu_txt1">
+                <view class="aboutjishu_txt1_img"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/aboutimg_27.png"></image></view>
+                <view class="span dddd" style="margin-top:0px;">专业策划：</view> 极鼎科技设有专业的策划部，通过PM（项目经理）理解客户的商业需求后，与策划人员共同策划方案，确保为客户提供最优秀、独特、充分且经济的项目制作方案。 
+
+                <view class="span dddd">视觉设计：</view> 极鼎科技拥有多名优秀的美工设计师，在视觉设计方面，我们是最肯下工夫的团队，在策划阶段，设计人员即时参与规划，甄选国外优秀精品案例作为参考对象，设计阶段，亦能媲美并超越国外精品网站水平。 
+
+                <view class="span dddd">功能开发：</view> 极鼎科技相信，个性化、多样化、定制化的平台才能满足客户需求，帮助客户实现商业目标，极鼎科技具有丰富编程经验的开发人员，为您独特的业务需求保驾护航。
+                <view class="span dddd">推广运营：</view> 网站/APP基础维护服务、SEO营销推广服务、APP榜单排名、APP关键词优化以及项目综合运营服务，确保您的项目实现商业价值。 
+                <view class="span dddd">品质监控：</view> 极鼎科技拥有卓越的管理团队，核心管理人员均出自知名企业。同时，极鼎科技建立了完善的项目品质监控流程，在每一个环节严格把控，保障客户项目品质。
+            </view>
+        </view> 
+
+</view>
+<view class="content1" style="display:{{block2}}">
+<view class="footer_txt1">
+            <view class="ul">
+                <view class="li" bindtap="callphone" id="0512-86868518"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/contact_03.png"></image>0512-86868518</view>
+                <view class="li" bindtap="callphone" id="0512-86868518"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/contact_05.png"></image>0512-86868518</view>
+                <view class="li" bindtap="callphone" id="15151556315"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/contact_10.png"></image>15151556315</view>
+                <view class="li"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/contact_12.png"></image>1521973280@qq.com</view>
+                <view class="li"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/contact_15.png"></image>苏州市相城区相成道789号凯翔大厦南4003-2</view>
+            </view>
+        </view>
+<view class="aboutmap">
+            <image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/map_03.jpg"></image>
+        </view>
+</view>
+
+
+<view class="content1" style="display:{{block3}}">
+<view class="client_list">
+            <view class="ul">
+                <view class="li" wx:for="{{listall}}"><image src="{{BaseImgUrl}}{{item.litpic}}"></image></view>
+                
+                
+            </view>
+        </view>
+</view>
+
+
+
+
+<template is="footer" data="{{BaseInfo,close,block,topBackground,BaseImgUrl}}"/>

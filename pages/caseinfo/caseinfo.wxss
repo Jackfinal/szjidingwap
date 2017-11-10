@@ -1,0 +1,139 @@
+/* pages/caseinfo/caseinfo.wxss */
+.casebanner{
+  height: 316rpx;
+}
+.casebanner image{
+  height: 316rpx;
+}
+
+
+.caseto {
+	width: 97%;
+	margin-left: 3%;
+	overflow: hidden
+}
+
+.caseto_name {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	font-size: 35rpx;
+	padding: 15rpx 0
+}
+
+.caseto_tply {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	font-size: 28rpx;
+	color: #666;
+	padding: 15rpx 0
+}
+
+.caseto_tply .span {
+	float: right;
+	margin-right: .1rem
+}
+
+.caseto_tply a {
+	color: #f60
+}
+
+.caseto_txt {
+	width: 100%;
+	overflow: hidden;
+	padding: 15rpx 0;
+	font-size: 28rpx;
+	color: #666
+}
+
+.caseto_txt dt {
+	float: left
+}
+
+.caseto_txt dd {
+	margin-left: .35rem;
+	overflow: hidden
+}
+
+.caseto_txt dd span {
+	display: block;
+	height: .56rem;
+	overflow: hidden
+}
+
+.caseto_txt dd i {
+	font-style: normal;
+	color: #0092ee
+}
+
+.caseimg {
+	width: 100%;
+	padding-bottom: .4rem;
+	padding-top: .1rem;
+	overflow: hidden;
+	background: #f6f6f6;
+	border-top: 1px solid #ddd;
+	font-size: .12rem
+}
+
+.caseimg_box {
+	width: 94%;
+	overflow: hidden;
+	margin: 0 auto
+}
+
+.caseimg_box img {
+	margin-bottom: .1rem
+}
+
+.newsimg {
+	width: 100%;
+	padding-bottom: .4rem;
+	padding-top: .1rem;
+	overflow: hidden;
+	background: #f6f6f6;
+	border-top: 1px solid #ddd;
+	font-size: 30rpx
+}
+
+.newsimg_box {
+	width: 94%;
+	overflow: hidden;
+	margin: 0 auto
+}
+
+.newsimg_box image {
+	margin-bottom: 10rpx;
+	margin-top: 10rpx
+}
+
+.newstotitle {
+	width: 97%;
+	margin-top:20rpx;
+	overflow: hidden;
+	margin-left: 3%;
+}
+
+.newstotitle .dt {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	padding: 10rpx 0;
+	font-size: 40rpx;
+	color: #0076d1
+}
+
+.newstotitle .dd {
+	width: 100%;
+	font-size: 30rpx;
+	color: #999;
+	padding: 10rpx 0
+}
+
+.casetofix{width:100%;overflow:hidden;background:#fff;border-top:1px solid #ddd;position:fixed;bottom:0;left:0;z-index:9;padding:15rpx 0}
+.casetofix .li{width:7%;overflow:hidden;float:left}
+.casetofix .li image{
+  width: 52rpx;
+  height: 38rpx;
+}
+.casetofix .li:nth-child(1){margin-left:3%}
+.casetofix .li:nth-child(2){margin-left:36%}
+.casetofix .li:nth-child(3){margin-right:3%;float:right}

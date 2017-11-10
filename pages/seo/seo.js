@@ -1,10 +1,10 @@
-// pages/casepage/casepage.js
+// pages/case/case.js
 var WxParse = require('../../wxParse/wxParse.js');
 var utils = require('../../utils/util.js');
 //获取应用实例
 var app = getApp()
 Page({
-  
+
   /**
    * 页面的初始数据
    */
@@ -13,29 +13,26 @@ Page({
     close: 0,
     block: 'none',
     topBackground: '',
-    BaseImgUrl: app.BaseImgUrl,
-    otherList: []
+    BaseImgUrl: app.BaseImgUrl
   },
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     var that = this
-    this.setData({
-      BaseInfo: app.BaseInfo
-    });
+
     wx.setNavigationBarTitle({
       title: app.BaseInfo.cfg_webname
     })
-    if (!options.id){
-      options.id = 1;
-    }
-    let classInfo = utils.getClassInfo(options.id, app.BaseInfo.nav);
-    console.log(classInfo.content);
-    WxParse.wxParse('article', 'html', classInfo.content, that, 5);
-    this.getOther();
     
+    this.setData({
+      BaseInfo: app.BaseInfo
+    });
+
+    WxParse.wxParse('article', 'html', app.BaseInfo.nav[5]['content'], that, 5);
+    //this.getOther();
   },
 
   /**
@@ -63,27 +60,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
   
   },
   onClickMenu: function () {
@@ -125,6 +101,7 @@ Page({
           duration: 2000
         })
       }
+      WxParse.wxParse('article', 'html', that.data.otherList.about, that, 5);
 
     });
   },
@@ -133,16 +110,11 @@ Page({
       url: e.currentTarget.id
     })
   },
-  jumpPos: function(e) {
-    wx.pageScrollTo({
-      scrollTop: e.currentTarget.id
-    })
-  },
-  callphone: function (e) {
+  callphone: function(e) {
     let m = '';
-    if (e.currentTarget.id == '') {
+    if (e.currentTarget.id == ''){
       m = this.data.BaseInfo.x_mobile
-    } else {
+    }else {
       m = e.currentTarget.id
     }
     wx.makePhoneCall({

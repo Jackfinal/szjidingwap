@@ -59,23 +59,23 @@
         <view class="case_list">
             <view class="ul">
                 <view class="li" wx:for="{{otherList.case}}">
-                        <view data-id="{{item.id}}"><image src="{{BaseImgUrl}}{{item.litpic}}"></image><text class="ellipsis">{{item.title}}</text></view>
+                        <view data-id="{{item.id}}" bindtap="jump" id="/pages/caseinfo/caseinfo?id={{item.id}}"><image src="{{BaseImgUrl}}{{item.litpic}}"></image><text class="ellipsis">{{item.title}}</text></view>
                     </view>
 					</view>
         </view>
         
-        <view class="case_but">加载更多案例</view>
+        <view class="case_but" bindtap="jump" id="/pages/case/case?id=2">加载更多案例</view>
     </view>
     <view class="client">
         <view class="service_title">VIEW观点</view>
         <view class="client_news">
             <view class="ul">
 			
-                <view class="li ellipsis" wx:for="{{otherList.view}}" data-id="{{item.id}}">{{item.title}}</view>
+                <view class="li ellipsis" wx:for="{{otherList.view}}" bindtap="jump" id="/pages/caseinfo/caseinfo?type=2&id={{item.id}}">{{item.title}}</view>
 
            
 				</view>
-            <view class="client_news_but">查看更多>></view>
+            <view class="client_news_but" bindtap="jump" id="/pages/news/news">查看更多>></view>
         </view>
     </view>
 
@@ -85,7 +85,7 @@
 		<image src="{{BaseImgUrl}}/templets/szjdwap/images/webxh.jpg"></image> 
 		<view class="indexabout_about"><template is="wxParse" data="{{wxParseData:article.nodes}}"/></view>
         </view>
-        <view class="client_news_but">查看更多>></view>
+        <view class="client_news_but" bindtap="jump" id="/pages/about/about">查看更多>></view>
     </view>
 
     <view class="client_shuzi">

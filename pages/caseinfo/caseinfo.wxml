@@ -1,0 +1,62 @@
+<!--pages/caseinfo/caseinfo.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<import src="../common/common.wxml"/>
+<view class="classname" wx:if="{{type==1}}">
+  <view class="casebanner" style=" background:#bd8e55;">
+	<view style="width:100%;"><image src="{{BaseImgUrl}}{{info.content.bjtp3}}" style="width:100%;"></image></view>
+</view>
+
+<view class="caseto">
+        <view class="caseto_name">{{info.title}}</view>
+        <view class="caseto_tply">行业：{{info.content.hangye}}<view class="span">周期：{{info.content.zhouqi}}</view></view>
+        <view class="caseto_tply">网址：{{info.content.wangzhi1}}</view>
+        <view class="caseto_txt">
+            <view class="dl">
+                <view class="dt">介绍：</view>
+                <view class="dd">
+                    <view id="info">
+                         {{info.description}}
+                    </view>
+                    
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="caseimg">
+	   <view class="caseimg_box">
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+		  
+		</view>
+    </view>
+</view>
+<view class="classname" wx:eles>
+  <view class="newstotitle">
+        <view class="dl">
+            <view class="dt">{{info.title}}</view>
+            <view class="dd"><text>作者：{{info.writer}}</text><text>发布于：{{info.timer}}</text><text>浏览：{{info.click}}</text></view>
+        </view>
+    </view>
+    <view class="newsimg">
+        <view class="newsimg_box">
+		<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+	
+           </view>
+    </view>
+</view>
+
+<view class="casetofix">
+        <view class="ul">
+
+      　　　　<view class="li" bindtap="jump" id="{{prev}}">
+              <image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/casetoimg_25.png"></image>
+            </view>
+            <view class="li" bindtap="back">
+              <image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/casetoimg_27.png"></image>
+            </view>
+            <view class="li"  bindtap="jump" id="{{next}}">
+              <image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/casetoimg_29.png"></image>
+            </view>
+     　
+        </view>
+    </view>

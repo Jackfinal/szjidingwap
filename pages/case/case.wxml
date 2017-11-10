@@ -1,0 +1,30 @@
+<!--pages/case/case.wxml-->
+<import src="../common/common.wxml"/>
+<import src="../../wxParse/wxParse.wxml"/> 
+<template is="header" data="{{BaseInfo,close,block,topBackground}}"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+<scroll-view class="casenav" scroll-x='true' style="width: 100%" scroll-into-view="{{scrollintoview}}">
+                <view class="swiper-slide {{hover}} swiper-slide-active li"  bindtap="jumpp"  id="pagescasecaseid-2" >
+                    <view><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/caseinco_03.png"></image>
+                        全部案例</view>
+                </view>
+                <block wx:for="{{BaseInfo.nav[2].child}}">
+                <view class="swiper-slide swiper-slide-active li {{item.hover}}"  bindtap="jumpp" id="pagescasecaseid-{{item.id}}"  >
+                    <view><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/caseicon_{{item.id}}.png"></image>
+                        {{item.typename}}</view>
+                </view>
+                </block>
+            </scroll-view>
+
+     <view class="case">
+        <view class="case_list">
+            <view class="ul">
+                <view class="li" wx:for="{{listCase}}">
+                        <view bindtap="jump" id="/pages/caseinfo/caseinfo?id={{item.id}}"><image src="{{BaseImgUrl}}{{item.litpic}}"></image><text class="ellipsis">{{item.title}}</text></view>
+                    </view>
+					</view>
+        </view>
+        
+        <view class="case_but" bindtap="more" >加载更多案例</view>
+    </view>       
+<template is="footer" data="{{BaseInfo,close,block,topBackground,BaseImgUrl}}"/>

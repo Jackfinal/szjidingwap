@@ -1,0 +1,22 @@
+/* pages/case/case.wxss */
+
+.cbanner{width:100%;overflow:hidden;position:relative}
+.cbanner image{ width: 100%!important;}
+.client_shuzi1{width:100%;overflow:hidden;position:absolute;top:45%;left:0}
+.client_shuzi1_left{width:23%;float:left;text-align:center;font-size:30rpx;color:#fff}
+.client_shuzi1_left .wxParse-span{font-size:60rpx;display:block;line-height:80rpx}
+.client_shuzi1_con{width:25%;float:left;text-align:center;font-size:30rpx;color:#fff}
+.client_shuzi1_con .wxParse-span{font-size:60rpx;display:block;line-height:80rpx;position:relative}
+.client_shuzi1_con .wxParse-span i{font-size:.26rem;line-height:.18rem;font-style:normal;position:absolute;top:0;margin-left:10rpx}
+.client_shuzi1_right{width:25%;float:right;text-align:center;font-size:30rpx;color:#fff}
+.client_shuzi1_right .wxParse-span{font-size:60rpx;display:block;line-height:80rpx}
+
+
+.casenav{width:100%;overflow:hidden;margin-bottom:20rpx;background:#f8f8f8; height: 160rpx;white-space: nowrap;}
+.casenav .li{display:inline-block;width:210rpx;border-bottom:1px solid #e0e0e0;text-align:center;color:#666;padding:30rpx 0 20rpx 0;font-size:30rpx;}
+.casenav .li:before{border-right:1px solid #e9e9e9;top:0;right:0;height:100%}
+.casenav .li image{width:71rpx; height:56rpx;display: block; margin: 0 auto;margin-bottom:10rpx;}
+.casenav .li view{width:100%;height:100%;display:block;color:#666; text-align: center}
+.casenav .li.hover{background:#fff;border-bottom:1px solid #fff}
+.casenav .li.hover view{color:#01a360}
+

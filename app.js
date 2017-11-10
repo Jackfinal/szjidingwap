@@ -2,13 +2,15 @@
 
 App({
   onLaunch: function() {
-    this.BaseApiUrl = 'http://szjidingwap.0512iis.tt';
-    this.BaseImgUrl = 'http://szjidingwap.0512iis.cc';
+    this.BaseApiUrl = 'https://xiaochengxu.0512iis.com';
+    this.BaseImgUrl = 'http://szjidingwap.0512iis.com';
     this.BaseInfo = {};
     var that = this;
+    
     //获取基础配置信息
     this.RequestUrl( '/index.php/index/getBase' ,{} , '', function(res) {
       that.BaseInfo = res.data.data;
+      
       wx.setStorage({
         key: "BaseInfo",
         data: that.BaseInfo
@@ -42,7 +44,7 @@ App({
       url: that.BaseApiUrl + url,
       data: data,
       header: {
-        'content-type': 'application/json'
+        'content-type': 'application/x-www-form-urlencoded'
       },
       method: method,
       success: success,

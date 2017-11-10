@@ -1,0 +1,38 @@
+<!--pages/case/case.wxml-->
+<import src="../common/common.wxml"/>
+<import src="../../wxParse/wxParse.wxml"/> 
+<template is="header" data="{{BaseInfo,close,block,topBackground}}"/>
+<view class="cbanner">
+  <image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/news_03.jpg"></image>
+</view>
+<scroll-view class="casenav" scroll-x='true' style="width: 100%" scroll-into-view="{{scrollintoview}}">
+                <view class="swiper-slide {{hover}} swiper-slide-active li"  bindtap="jumpp"  id="pagescasecaseid-3" >
+                    <view>
+                        全部文章</view>
+                </view>
+                <block wx:for="{{BaseInfo.nav[3].child}}">
+                <view class="swiper-slide swiper-slide-active li {{item.hover}}"  bindtap="jumpp" id="pagescasecaseid-{{item.id}}"  >
+                    <view>
+                        {{item.typename}}</view>
+                </view>
+                </block>
+            </scroll-view>
+
+     <view class="case">
+            <view  class="news_list" id="list">
+                <view class="dl" wx:for="{{listCase}}" bindtap="jump" id="/pages/caseinfo/caseinfo?id={{item.id}}&type=2"  >
+            
+            <view class="dt">
+            <image src="{{BaseImgUrl}}{{item.litpic}}"></image>
+            <view class="h1"><text class="span">{{item.day}}</text>{{item.year}}</view>
+			</view>
+            <view class="dd">{{item.title}}</view>
+            
+            </view>
+                
+					
+        </view>
+        
+        <view class="case_but" bindtap="more" >加载更多资讯</view>
+    </view>       
+<template is="footer" data="{{BaseInfo,close,block,topBackground,BaseImgUrl}}"/>

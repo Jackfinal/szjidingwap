@@ -1,0 +1,36 @@
+/* pages/seo/seo.wxss */
+.cbanner image{ width: 100%; height: 628rpx;}
+
+
+.section-item {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.title{ font-size: 40rpx; text-align: center; line-height: 40rpx; font-weight: bold}
+.titlep{ font-size: 30rpx; line-height: 50rpx; width: 80%; margin: 20rpx auto}
+.oneli{ width: 80%;margin: 20rpx auto; font-size: 28rpx; color: #68717b}
+.oneli image{ width: 50rpx; height: 50rpx; float: left;}
+.button{ width: 30%; height: 60rpx; background: #f56753; color: #fff; font-size: 30rpx; text-align: center; line-height: 60rpx;margin: 50rpx auto; border-radius: 20rpx;}
+.seoimage image{ width: 460rpx; height: 220rpx;}
+.seoimage{ text-align: center; margin: 30rpx 0; }
+
+.seotwo{background: #fc6170; color: #fff; padding-bottom: 30rpx;}
+.seotwoimg{ width: 100%; height: 640rpx; margin: 80rpx 0;}
+.seotwoli{ width: 80%; margin: 40rpx auto; font-size: 35rpx; line-height: 50rpx; }
+.seotwoli image{ width: 70rpx; height: 70rpx; float: left; margin-right: 20rpx;}
+.seotwotext{ font-size: 28rpx; width: 100%;}
+.imcc { height: 70rpx; width: 100%; line-height: 70rpx;}
+.seotwo .button{ background: #fff;color: #fc6170}
+
+.semclassname{padding: 50rpx 0;}
+
+.three{ padding-top: 40rpx; background: #fbf4e7; color: #484c50}
+.three .button{background: #fc6170;color: #fff }
+.four{ padding: 50rpx 0;}
+
+.five{ background: #fff; padding-top: 40rpx; color: #484c50}
+.five .button{background: #fc6170;color: #fff }

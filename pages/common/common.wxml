@@ -9,7 +9,7 @@
                 <text style="top:14rpx"></text>
                 <text style="top:28rpx"></text>
               </view>
-              <icon type="cancel" wx:else size="23" color="#fff"/>
+              <icon type="cancel" wx:else size="23" />
           </view>
   </view>
   <view class="meun" style="display: {{block}};">
@@ -17,7 +17,11 @@
         <view class="menuli" bindtap="jump" id="/pages/index/index">首页<image src="../../static/images/sjindex_03.png"></image></view> 
         <block wx:for="{{BaseInfo.nav}}">      
         <view class="menuli"  data-id='{{index}}' bindtap="jump" wx:if="{{item.id==1}}" id="/pages/casepage/casepage?id=1">{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
-        <view class="menuli" bindtap="jump" wx:else>{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
+        <view class="menuli"  data-id='{{index}}' bindtap="jump" wx:elif="{{item.id==2}}" id="/pages/case/case">{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
+        <view class="menuli"  data-id='{{index}}' bindtap="jump" wx:elif="{{item.id==3}}" id="/pages/news/news">{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
+        <view class="menuli"  data-id='{{index}}' bindtap="jump" wx:elif="{{item.id==4}}" id="/pages/case/case?id=10">{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
+        <view class="menuli"  data-id='{{index}}' bindtap="jump" wx:elif="{{item.id==5}}" id="/pages/seo/seo">{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
+        <view class="menuli" bindtap="jump" wx:else  id="/pages/about/about">{{item.typename}}<image src="../../static/images/sjindex_03.png"></image></view>
         </block>
 		</view>
   </view>
@@ -26,11 +30,11 @@
 <template name="footer">
 <view class="footer">
     <view class="footer_nav">
-  	<text href="/appdev">网站建设</text><text href="/web">精品案例</text><text href="/case.html">极鼎观点</text><text href="/about">关于极鼎</text></view>
+  	<text bindtap="jump" id="/pages/casepage/casepage?id=1">网站建设</text><text bindtap="jump" id="/pages/case/case">精品案例</text><text bindtap="jump"  id="/pages/news/news">极鼎观点</text><text bindtap="jump" id="/pages/about/about">关于极鼎</text></view>
     <view class="footer_txt">
         <view class="ul">
-            <view class="li"><image src="{{BaseImgUrl}}/templets/szjdwap/images/botttomimg_59.png"></image>{{BaseInfo.x_tel}}</view>
-            <view class="li"><image src="{{BaseImgUrl}}/templets/szjdwap/images/botttomimg_56.png"></image>{{BaseInfo.x_mobile}}</view>
+            <view class="li" bindtap="callphone" id="{{BaseInfo.x_tel}}"><image src="{{BaseImgUrl}}/templets/szjdwap/images/botttomimg_59.png"></image>{{BaseInfo.x_tel}}</view>
+            <view class="li" bindtap="callphone" id="{{BaseInfo.x_mobile}}"><image src="{{BaseImgUrl}}/templets/szjdwap/images/botttomimg_56.png"></image>{{BaseInfo.x_mobile}}</view>
             <view class="li"><image src="{{BaseImgUrl}}/templets/szjdwap/images/botttomimg_63.png"></image>{{BaseInfo.x_email}}</view>
             <view class="li"><image src="{{BaseImgUrl}}/templets/szjdwap/images/botttomimg_70.png"></image>{{BaseInfo.x_address}}</view>
         </view> 
@@ -39,4 +43,5 @@
    
     <view class="footer_cop">Copyright © 2010-2016 苏州极鼎网络科技有限公司</view>
 </view>
+
 </template>

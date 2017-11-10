@@ -1,0 +1,76 @@
+/* pages/news/news.wxss */
+.cbanner image{ width: 100%; height: 628rpx;}
+.casenav{width:100%;overflow:hidden;margin-bottom:20rpx;background:#f8f8f8; height: 160rpx;white-space: nowrap;}
+.casenav .li{display:inline-block;width:210rpx;border-bottom:1px solid #e0e0e0;text-align:center;color:#666;padding:30rpx 0 20rpx 0;font-size:30rpx;}
+.casenav .li:before{border-right:1px solid #e9e9e9;top:0;right:0;height:100%}
+.casenav .li image{width:71rpx; height:56rpx;display: block; margin: 0 auto;margin-bottom:10rpx;}
+.casenav .li view{width:100%;height:100%;display:block;color:#666; text-align: center}
+.casenav .li.hover{background:#fff;border-bottom:1px solid #fff}
+.casenav .li.hover view{color:#01a360}
+
+
+
+.news_list {
+	width: 100%;
+	overflow: hidden
+}
+
+.news_list .dl {
+	width: 49%;
+	float: left;
+	overflow: hidden;
+	background: #fff;
+	font-size: 30rpx;
+	margin-bottom: 2%
+}
+
+.news_list .dl:nth-child(2n-1) {
+	float: left
+}
+
+.news_list .dl:nth-child(2n) {
+	float: right
+}
+
+.news_list .dl .dt {
+	width: 100%;
+	overflow: hidden;
+	position: relative
+}
+.news_list .dl .dt image{
+  width: 100%;
+  height: 230rpx
+}
+.news_list .dl .dt .h1 {
+	width: 102rpx;
+	height: 102rpx;
+	background: rgba(0,0,0,.5);
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid rgba(255,255,255,.2);
+	border-top: none;
+	border-left: none;
+	text-align: center;
+	color: #fff;
+	font-size: 25rpx;
+	font-weight: 400
+}
+
+.news_list .dl .dt .h1 .span {
+	font-size: 40rpx;
+	line-height: 40rpx;
+	margin-top: 15rpx;
+	display: block
+}
+
+.news_list .dl .dd {
+	width: 92%;
+	overflow: hidden;
+	height: 100rpx;
+	margin: 12rpx auto;
+}
+
+
+

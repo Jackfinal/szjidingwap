@@ -81,5 +81,16 @@ Page({
     wx.navigateTo({
       url: e.currentTarget.id
     })
+  },
+  callphone: function (e) {
+    let m = '';
+    if (e.currentTarget.id == '') {
+      m = this.data.BaseInfo.x_mobile
+    } else {
+      m = e.currentTarget.id
+    }
+    wx.makePhoneCall({
+      phoneNumber: m //仅为示例，并非真实的电话号码
+    })
   }
 })

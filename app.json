@@ -1,6 +1,11 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/about/about",
+    "pages/seo/seo",
+    "pages/news/news",
+    "pages/case/case",
+    "pages/caseinfo/caseinfo",
     "pages/casepage/casepage"
     
   ],

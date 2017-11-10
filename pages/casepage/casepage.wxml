@@ -8,12 +8,12 @@
         <view class="case_list">
             <view class="ul">
                 <view class="li" wx:for="{{otherList.case}}">
-                        <view data-id="{{item.id}}"><image src="{{BaseImgUrl}}{{item.litpic}}"></image><text class="ellipsis">{{item.title}}</text></view>
+                        <view id="/pages/caseinfo/caseinfo?id={{item.id}}"><image src="{{BaseImgUrl}}{{item.litpic}}"></image><text class="ellipsis">{{item.title}}</text></view>
                     </view>
 					</view>
         </view>
         
-        <view class="case_but">加载更多案例</view>
+        <view class="case_but" bindtap="jump" id="/pages/case/case?id=2">加载更多案例</view>
     </view>
 
 <view class="applioxen">

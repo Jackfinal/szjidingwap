@@ -1,0 +1,103 @@
+<import src="../common/common.wxml"/>
+<import src="../../wxParse/wxParse.wxml"/> 
+<template is="header" data="{{BaseInfo,close,block,topBackground}}"/>
+<view class="cbanner">
+  <image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/youhua.jpg"></image>
+</view>
+<view class="title">SEO 搜索引擎优化</view>
+<view class="titlep">根据百度搜索引擎的搜索规律，从网站平台内部及外部对每个细节进行优化。当用户搜索与您生意有关的特定关键词时，在百度首页展示您的网站，让您在同行业竞争对手中脱颖而出。 </view>
+<view class="oneli"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/website-build-list-icon-3.png"></image>让更多的用户更快的找到他想找的东西</view>
+<view class="oneli"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/website-build-list-icon-3.png"></image>为网站提供生态式的自我营销解决方案</view>
+<view class="oneli"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/website-build-list-icon-3.png"></image>让特定关键词排名靠前，满足用户需求</view>
+<view class="button" bindtap="callphone">了解SEO优化</view>
+<view class="seoimage"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/marketing-section1-image2.png"></image></view>
+<view class="seotwo">
+  <image class="seotwoimg" src="http://szjidingwap.0512iis.com/templets/szjdwap/images/marketing-2-left-image2-mobil.png"></image>
+  <view class="title">SEO 搜索引擎优化策略</view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-icon-gjc.png"></image>关键词分析</view>
+    <view class="seotwotext">这是进行SEO优化最重要的一环，关键词分析包括：关键词关注量分析、竞争对手分析、关键词与网站相关性分析、关键词布置、关键词排名分析。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-icon-fx.png"></image>网站架构分析</view>
+    <view class="seotwotext">网站结构符合搜索引擎的爬虫喜好则有利于SEO优化。网站架构分析包括：剔除网站架构不良设计、实现树状目录结构、网站导航与链接优化。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-icon-ymfx.png"></image>网站页面分析</view>
+    <view class="seotwotext">页面优化SEO不止是让网站首页在搜索引擎有好的排名，更重要的是让网站的每个页面都带来流量</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-icon-wzdt.png"></image>建立网站地图</view>
+    <view class="seotwotext">根据网站结构制作网站地图，让网站对搜索引擎更加友好化。让搜索引擎能过网站地图就可以访问站点上的所有网页和栏目。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-icon-gxbz.png"></image>内容更新布置</view>
+    <view class="seotwotext">搜索引擎喜欢有规律的网站内容更新，所以合理安排网站内容发布日程是SEO优化的重要技巧之一。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-icon-wzlj.png"></image>网站链接布置</view>
+    <view class="seotwotext">则把整个网站有机地串联起来，让搜索引擎明白每个网页的重要性和关键词，实时的参考是第一点的关键词布置。友情链接战役也是这个时候展开。</view>
+  </view>
+  <view class="button" bindtap="callphone">了解SEO优化</view>
+</view>
+<view class="semclassname">
+<view class="title">SEM 搜索引擎营销</view>
+<view class="titlep"> 一种按效果付费的网络推广方式，简单便捷的网页操作即可给企业带来大量潜在客户，有效提升企业知名度及销售额。</view>
+<view class="oneli"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/website-build-list-icon-3.png"></image>立竿见影： 潜在客户在搜索您提交的产品或者服务关键词时，第一时间就能找到您公司网站，给您公司打咨询电话，产生订单。</view>
+<view class="oneli"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/website-build-list-icon-3.png"></image>点击付费：下过完全按照给公司带来的潜在客户点击计费，没有点击不计费。费用统计报告使投入明明白白。</view>
+<view class="oneli"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/website-build-list-icon-3.png"></image>精准投放：将推广信息，按照设定的地域、时间进行投放，精确覆盖特定地区、特定时间段的潜在客户。</view>
+<view class="button" bindtap="callphone">了解SEM营销</view>
+<view class="seoimage"><image style="width:100%; height:560rpx;" src="http://szjidingwap.0512iis.com/templets/szjdwap/images/marketing-section-3-right-image.jpg"></image></view>
+
+</view>
+
+<view class="seotwo three">
+
+  <view class="title">SEM 搜索引擎营销策略</view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-sem-icon-gjc.png"></image>核心关键词定位</view>
+    <view class="seotwotext">我们研究分析您的生意，为您选择更具体、商业意图更明显的关键词。确保关键词是点击量和搜索量最高的关键词。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-sem-icon-zhjg.png"></image>优化的账户结构</view>
+    <view class="seotwotext">针对关键词撰写创意，并控制每个推广单元内关键词的数量，以保证这些关键词与创意之间具有较高的相关性。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-sem-icon-cyzx.png"></image>高质量创意撰写</view>
+    <view class="seotwotext">高质量的创意撰写可以吸引网民关注，提高点击率，同时也有利于增强搜索词、关键词与创意的相关性，从而提升质量度。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-sem-icon-yhpp.png"></image>优化匹配的方式</view>
+    <view class="seotwotext">高质量的创意撰写可以吸引网民关注，提高点击率，同时也有利于增强搜索词、关键词与创意的相关性，从而提升质量度。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-sem-icon-yhpp.png"></image>优化匹配的方式</view>
+    <view class="seotwotext">按照“由宽到窄”的策略来选择匹配方式，即新提交的关键词尽量设为广泛匹配，并保持至少两至三周的时间用以观察效果。</view>
+  </view>
+<view class="seoimage"><image style="width:100%; height:760rpx;" src="http://szjidingwap.0512iis.com/templets/szjdwap/images/market-ppc-img.png"></image></view>
+
+  <view class="button" bindtap="callphone">了解SEO优化</view>
+</view>
+
+<view class="four">
+  <view class="title">新媒体网络营销</view>
+  <view class="titlep"> 一种按效果付费的网络推广方式，简单便捷的网页操作即可给企业带来大量潜在客户，有效提升企业知名度及销售额。</view>
+  <image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/market-new-media-img.png" style="width:100%; hight:300rpx;"></image>
+</view>
+
+<view class="seotwo five">
+
+  <view class="title">新媒体网络营销策略</view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-xmt-icon-qw.png"></image>趣味策略</view>
+    <view class="seotwotext">互联网的本质是娱乐属性的，置身于互联网这个商圈中，广告、营销也必须是娱乐化、趣味性的。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-xmt-icon-ly.png"></image>利益策略</view>
+    <view class="seotwotext">天下熙熙，皆为利来，天下攘攘，皆为利往。网络是一个信息与服务泛滥的江湖，营销活动不能为目标受众提供利益，必然寸步难行。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-xmt-icon-hd.png"></image>互动策略</view>
+    <view class="seotwotext">网络媒体区别于传统媒体的另一个重要的特征是其互动性，充分挖掘网络的交互性与消费者交流，让网络营销的功能发挥至极致。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-xmt-icon-gx.png"></image>个性策略</view>
+    <view class="seotwotext">专属、个性显然更容易俘获消费者的心。因为个性，所以精准，因为专属，所以诱人。个性化营销更能投消费者所好，更容易引发互动与购买行动。 </view>
+  </view>
+  <view class="seotwoli"><view class="imcc"><image src="http://szjidingwap.0512iis.com/templets/szjdwap/images/mkt-xmt-icon-cy.png"></image>创意策略</view>
+    <view class="seotwotext">新媒体的发展使病毒营销、社区营销、互动体验、口碑传播、焦点渗透、事件营销等各种新的广告形式和营销方法不断出现。</view>
+  </view>
+  <view class="seotwoli"><view class="imcc">省钱策略</view>
+    <view class="seotwotext">新媒体宣传品牌的方式多元化，提供了更多免费的开放平台，资源共亨，有效地降低了营销的成本。</view>
+  </view>
+<view class="seoimage"><image style="width:100%; height:600rpx;" src="http://szjidingwap.0512iis.com/templets/szjdwap/images/market-yxlc-img.png"></image></view>
+
+  <view class="button" bindtap="callphone">了解SEO优化</view>
+</view>
+
+<template is="footer" data="{{BaseInfo,close,block,topBackground,BaseImgUrl}}"/>
